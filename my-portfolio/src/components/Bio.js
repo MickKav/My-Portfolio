@@ -7,7 +7,7 @@ function Bio() {
             <h2>About Me</h2>
             <p>Bio goes here ...</p>
         </section>
-    )
+    );
 }
 
 export default Bio;
