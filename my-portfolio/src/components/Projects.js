@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/Projects.css'
 
 function Projects() {
-    render (
+    return (
         <section id="projects" className="projects">
             <h2>Projects</h2>
             <div>Your projects here ...</div>
