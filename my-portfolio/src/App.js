@@ -4,7 +4,8 @@ import {
   Header, 
   Bio, 
   Projects,
-  Contact
+  Contact,
+  Landing
   } from './components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
+          <Route path="/" element={<Landing />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
