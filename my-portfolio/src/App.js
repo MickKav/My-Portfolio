@@ -6,22 +6,22 @@ import {
   Projects,
   Contact
   } from './components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <section id="bio">
-        <Bio />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-      {/* Continue adding other components here ... */}
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/bio" element={<Bio />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* 404 Page Not Found Route */}
+          <Route path="*" element={<h2>Page Not Found</h2>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
