@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.css';
-import {Header, Bio, Projects} from './components';
+import {
+  Header, 
+  Bio, 
+  Projects,
+  Contact
+  } from './components';
 
 function App() {
   return (
@@ -8,6 +13,7 @@ function App() {
       <Header />
       <Bio />
       <Projects />
+      <Contact />
       {/* Continue adding other components here ... */}
     </div>
   );
