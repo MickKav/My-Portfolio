@@ -20,7 +20,7 @@ function Header() {
         <div className='nav-container'>
             <nav className='nav-bar'>
                 <ul className='unordered-list'>
-                    <li><Link to="/">Bio</Link></li>
+                    <li><Link to="/bio">Bio</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
