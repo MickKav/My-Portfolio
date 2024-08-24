@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/Bio.css'
+import '../assets/styles/components.css'
 
 function Bio() {
     return (

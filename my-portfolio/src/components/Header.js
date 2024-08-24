@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/styles/Header.css';
+import '../assets/styles/components.css';
 import '../assets/styles/theme.css';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,9 @@ function Header() {
 
     return (
         <header className="header">
-        <h1>Michael Kavanagh</h1>
+        <h1>
+            <Link to="/" className='home-link'>Michael Kavanagh</Link>
+        </h1>
         <div className='nav-container'>
             <nav className='nav-bar'>
                 <ul className='unordered-list'>

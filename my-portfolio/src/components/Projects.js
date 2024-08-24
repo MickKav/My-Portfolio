@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/Projects.css'
+import '../assets/styles/components.css'
 
 function Projects() {
     return (

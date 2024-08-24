@@ -1,3 +1,9 @@
+/* Global reset */
+* {
+    list-style: none;
+    margin: 0;
+}
+
 /* Default (Light Theme) */
 :root {
     --background-color: #ffffff;
