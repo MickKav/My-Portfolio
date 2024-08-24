@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/styles/components.css'
 
 function Projects() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './assets/styles/theme.css';
 import {
   Header, 
   Bio, 
@@ -14,14 +14,16 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/bio" element={<Bio />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* 404 Page Not Found Route */}
-          <Route path="*" element={<h2>Page Not Found</h2>} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/bio" element={<Bio />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* 404 Page Not Found Route */}
+            <Route path="*" element={<h2>Page Not Found</h2>} />
+          </Routes>
+        </main>
       </div>
     </Router>
   );

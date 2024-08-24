@@ -2,6 +2,8 @@
 * {
     list-style: none;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Default (Light Theme) */
@@ -20,19 +22,20 @@
     --header-background: #1f1f1f;
 }
 
+/* Body and Font Settings */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
-
 }
 
+/* Header Styles */
 header {
-    background-color: var(--background-color);
+    background-color: var(--header-background);
     padding: 20px;
 }
 
-
+/* Navigation Link Styles */
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -42,12 +45,14 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Navigation Container */
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Navigation List */
 .unordered-list {
     list-style-type: none;
     margin: 0;
@@ -56,6 +61,7 @@ a:hover {
     gap: 20px;
 }
 
+/* Theme Toggle Button */
 .theme-toggle {
     position: fixed;
     bottom: 0;
@@ -66,8 +72,129 @@ a:hover {
     font-size: 18px;
 }
 
+.home-icon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 3vw;
+    margin-left: 3vw;
+    cursor: pointer;
+}
+
+.home-icon img {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+}
+
+.home-icon img:hover {
+    opacity: 0.8;
+}
+
+/* Bio Section */
 #bio {
     position: relative;
     float: right;
     margin-right: 3vw;
+}
+
+/* Landing Page Layout */
+.landing-container {
+    display: flex;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--header-background);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.side-nav li {
+    margin-bottom: 20px;
+}
+
+.side-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side-nav a:hover {
+    text-decoration: underline;
+}
+
+.home-icon {
+    color: var(--text-color);
+}
+
+.landing-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--background-color);
+}
+
+.landing-content h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.landing h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.landing p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .landing-container {
+        flex-direction: column;
+    }
+
+    .side-nav {
+        width: 100%;
+        align-items: center;
+    }
+
+    .landing-content {
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landing-content h1 {
+        margin-top: 20px;
+    }
 }

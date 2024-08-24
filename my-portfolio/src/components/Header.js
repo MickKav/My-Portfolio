@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/styles/components.css';
-import '../assets/styles/theme.css';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
     const [theme, setTheme] = useState('light');
@@ -15,25 +15,25 @@ function Header() {
     }
 
     return (
-        <header className="header">
-        <h1>
-            <Link to="/" className='home-link'>Michael Kavanagh</Link>
-        </h1>
-        <div className='nav-container'>
-            <nav className='nav-bar'>
-                <ul className='unordered-list'>
+        <>
+        <div side-bar>
+            <nav className="side-nav">
+                <ul>
                     <li><Link to="/bio">Bio</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
+            {/* Home link with house icon */}
+            <Link className="home-icon" to="/">
+                <FontAwesomeIcon icon={faHouse} className="home-icon" />
+            </Link>
         </div>
         <div className="theme-toggle" onClick={toggleTheme}>
             {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
         </div>
-        </header>
+        </>
     );
 }
 
 export default Header;
-

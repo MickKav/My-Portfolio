@@ -1,12 +1,16 @@
 import React from 'react';
-import '../assets/styles/components.css';
 
 function Landing() {
     return (
-        <section className="landing">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Explore my bio, projects, and contact me for more information.</p>
-        </section>
+        <div className="landing-container">
+            <div className="landing-content">
+                <h1>Michael Kavanagh</h1>
+                <section className="landing">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>This is where you can learn more about me and see my work</p>
+                </section>
+            </div>
+        </div>
     );
 }
 
