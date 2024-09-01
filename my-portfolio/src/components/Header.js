@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
     const [theme, setTheme] = useState('light');
@@ -29,8 +29,16 @@ function Header() {
                 <FontAwesomeIcon icon={faHouse} className="home-icon" />
             </Link>
         </div>
+        {/* Theme toggle button */}
         <div className="theme-toggle" onClick={toggleTheme}>
-            {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
+            <FontAwesomeIcon
+                icon={faMoon}
+                className={`icon ${theme === 'dark' ? 'hidden' : ''}`}
+            />
+            <FontAwesomeIcon
+                icon={faSun}
+                className={`icon ${theme === 'light' ? 'hidden' : ''}`}
+            />
         </div>
         </>
     );

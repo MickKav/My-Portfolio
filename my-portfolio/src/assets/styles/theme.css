@@ -69,7 +69,22 @@ a:hover {
     margin-bottom: 3vw;
     margin-right: 3vw;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 24px;
+    color: var(--text-color);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
+
+.theme-toggle .icon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon.hidden {
+    opacity: 0;
+    transform: scale(0.8);
 }
 
 .home-icon {
