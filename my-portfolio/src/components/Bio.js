@@ -1,4 +1,5 @@
 import React from 'react';
+import portfolioPic from '../assets/images/portfolio-pic.jpg';
 
 function Bio() {
     return (
@@ -7,8 +8,8 @@ function Bio() {
                 <h1>About Me</h1>
             </header>
 
-            <section className="bio-section">
-                <img className="bio-profile-pic" alt="Profile" />
+            <section className="bio-profile bio-section">
+                <img src={portfolioPic} className="bio-profile-pic" alt="Profile" />
                 <h2>Introduction</h2>
                 <p>
                     Hi! I'm Michael, a passionate developer with a knack for creating beautiful, responsive, and functional web applications. With a strong background in [your skills or field], I enjoy turning complex problems into simple, elegant solutions.
