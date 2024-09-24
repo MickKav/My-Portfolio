@@ -1,6 +1,10 @@
 import sereneImage from './assets/images/serene.png';
 import rpslsImage from './assets/images/rpsls.png';
 import starWarsQuizImage from './assets/images/StarWarsQuiz.png';
+import diplomaCi from './assets/images/diplomaCi.png';
+import seoAnalysis from './assets/images/seoAnalysis.png';
+import mimoFrontEnd from './assets/images/mimoFrontEnd.png';
+import generativeAI from './assets/images/generativeAI.png';
 
 const projectsData = [
     {
@@ -23,6 +27,31 @@ const projectsData = [
     },
     
     // Add more projects as needed
+
 ];
 
-export default projectsData;
+const certificatesData = [
+    {
+      title: "Diploma in Full Stack Software Development (Predicitve Analytics)",
+      image: diplomaCi,
+      details: "Achieved from Code Institute in 2024",
+    },
+    {
+      title: "SEO: Competitive Analysis",
+      image: seoAnalysis,
+      details: "Completed at LinkedIn Learning in 2024",
+    },
+    {
+        title: "Front End Development",
+        image: mimoFrontEnd,
+        details: "Completed at Mimo in 2024",
+    },
+    {
+        title: "Career Essentials in Generative AI",
+        image: generativeAI,
+        details: "Completed at LinkedIn Learning with Microsoft in 2024",
+    },
+    // Add more certificates as needed
+  ];
+
+export { projectsData, certificatesData };

@@ -16,7 +16,7 @@ function Header() {
 
     return (
         <>
-        <div side-bar>
+        <div className="side-bar">
             <nav className="side-nav">
                 <ul>
                     <li><Link to="/bio">Bio</Link></li>
@@ -25,20 +25,22 @@ function Header() {
                 </ul>
             </nav>
             {/* Home link with house icon */}
-            <Link className="home-icon" to="/">
-                <FontAwesomeIcon icon={faHouse} className="home-icon" />
-            </Link>
-        </div>
-        {/* Theme toggle button */}
-        <div className="theme-toggle" onClick={toggleTheme}>
-            <FontAwesomeIcon
-                icon={faMoon}
-                className={`icon ${theme === 'dark' ? 'hidden' : ''}`}
-            />
-            <FontAwesomeIcon
-                icon={faSun}
-                className={`icon ${theme === 'light' ? 'hidden' : ''}`}
-            />
+            <div className="sidebar-icons">
+                <Link className="home-icon" to="/">
+                    <FontAwesomeIcon icon={faHouse} className="home-icon" />
+                </Link>
+                {/* Theme toggle button */}
+                <div className="theme-toggle" onClick={toggleTheme}>
+                    <FontAwesomeIcon
+                        icon={faMoon}
+                        className={`icon ${theme === 'dark' ? 'hidden' : ''}`}
+                    />
+                    <FontAwesomeIcon
+                        icon={faSun}
+                        className={`icon ${theme === 'light' ? 'hidden' : ''}`}
+                    />
+                </div>
+            </div>
         </div>
         </>
     );
